@@ -26,7 +26,7 @@ SOURCES_DIR = ROOT / "wiki/sources"
 
 def load_manifest() -> dict:
     if not MANIFEST_PATH.exists():
-        return {"ignore_files": [".gitkeep"], "grouped_units": []}
+        return {"ignore_files": [".gitkeep", ".DS_Store"], "grouped_units": []}
     return json.loads(MANIFEST_PATH.read_text())
 
 

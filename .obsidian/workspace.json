@@ -217,8 +217,11 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "2f3f925b92fee80b",
+  "active": "44fa2c29c0ef5764",
   "lastOpenFiles": [
+    "wiki/index/raw_units.json",
+    "wiki/index",
+    "my_space",
     "wiki/articles/Medical_Image_Fairness_Evaluation.md",
     "wiki/articles/DAFT.md",
     "wiki/synthesis/AGENTS.md",
@@ -244,7 +247,6 @@
     "wiki/sources/2026-07-06_fairness_beyond_demographics_hidden_cohorts.md",
     "wiki/articles/Fairness_Mitigation_In_Medical_Imaging.md",
     "wiki/sources/2026-07-06_addressing_fairness_issues_deep_learning_medical_image_analysis.md",
-    "wiki/articles/Vision_Language_Model_Fairness.md",
     "raw/papers/2026-07-06_dynamic_affine_feature_map_transform_3d_image_tabular.pdf",
     "raw/papers/2026-07-06_fairness_beyond_demographics_hidden_cohorts.pdf",
     "raw/papers/2026-07-06_fairread_demographic_refusion_medical_image_classification.pdf",
@@ -253,8 +255,6 @@
     "raw/papers/2026-07-06_gender_imbalance_medical_imaging_biased_classifiers.pdf",
     "raw/papers/2026-07-06_hidden_stratification_medical_imaging.pdf",
     "raw/papers/2026-07-06_how_fair_are_medical_imaging_foundation_models.pdf",
-    "raw/papers/2026-07-06_hyperfusion_hypernetwork_multimodal_tabular_medical_imaging.pdf",
-    "raw/papers/2026-07-06_hypernetworks.pdf",
     "assets/Pasted image 20260704194632.png",
     "_staging/google_cloud/メタデータ管理/assets/bf600c370a24-20221209.webp",
     "_staging/Pasted image 20260529105944.png",
