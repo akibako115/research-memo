@@ -12,3 +12,4 @@
 - DAFT article 作成: FiLM との違い，two-way exchange，AD 診断での性能，fairness での位置づけ
 - synthesis/AGENTS.md 作成: synthesis 層の執筆ガイドライン（articles との区別，構成パターン）
 - skills 追加: ingest（raw → source → article），query（wiki 検索 + Q&A 記録），article-create（backlog → article）
+- query 追加: Fusion × Hidden Subgroup Fairness の交差領域の検討（fairness 評価軸，impossibility theorem，設計空間，本質的な難しさ，研究優先度）
