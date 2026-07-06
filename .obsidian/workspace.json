@@ -39,10 +39,14 @@
             "id": "903ab5eeae5bb698",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "purpose.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "purpose"
             }
           }
         ],
@@ -234,6 +238,10 @@
   },
   "active": "903ab5eeae5bb698",
   "lastOpenFiles": [
+    "wiki/queries/2026-07-06_medical_imaging_fairness_papers_to_read.md",
+    "AGENTS.md",
+    "wiki/decisions/2026-07-06_hyperadapt_positioning.md",
+    "purpose.md",
     "my_space/internship-dotsline/assets/sts-ingestion-本番環境.md",
     "my_space/internship-dotsline/assets/terraform-module-design-本番環境.md",
     "my_space/internship-dotsline/terraform-module-test.md",
@@ -254,7 +262,6 @@
     "llm-wiki-de",
     "wiki/articles/AGENTS.md",
     "wiki/sources/AGENTS.md",
-    "purpose.md",
     "purpose.md.tmp.79595.03bc819719d0",
     "wiki/articles/Wiki_Query.md",
     "wiki/articles/Wiki_Lint.md",
@@ -264,8 +271,6 @@
     "wiki/articles/LLM_Wiki_Pattern.md",
     "wiki/articles/Dataform_Repository.md",
     "wiki/articles/Dataform.md",
-    "wiki/articles/Least_Privilege.md",
-    "wiki/articles/Secret_Manager.md",
     "Clippings",
     "raw/misc",
     "my_space/templates",

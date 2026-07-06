@@ -1,12 +1,12 @@
-# LLM Wiki — Template
+# LLM Wiki
 
 ## Overview
 
-個人またはチームのナレッジベース．
+Hypernetwork，画像 + テーブルデータのマルチモーダル学習，医療画像 Fairness に関する研究知識を，一次情報から再利用可能な概念知へ蒸留するための個人ナレッジベース．
 Karpathy の LLM Wiki パターンに基づき，raw → wiki の2層構造で知識を蒸留・管理する．
 一次情報から得た概念知に加えて，実装・運用・調査で得た実践知も wiki 層に蓄積する．
 
-このテンプレートを使うプロジェクトでは，この Overview と Domains を対象領域に合わせて更新する．
+この wiki の詳しい目的，追っている問い，スコープは [purpose.md](purpose.md) を参照する．
 
 ## Directory Structure
 
@@ -89,7 +89,7 @@ raw/*  →  sources/  →  articles/  →  synthesis/
 - `AGENTS.md` は，LLM が常に従う core schema として扱う．ディレクトリ構造，raw immutable，命名規則，wikilink，層の役割など，全作業に共通する規約を置く．
 - 各フォルダの `README.md` は，その層の短い役割説明として扱う．
 - 詳細な操作手順は必要になった時点で分離する．例: ingest，query，lint のように「いつ使わないか」が明確なものだけを独立させる．
-- この wiki の目的・追っている問い・スコープが肥大化した場合は，`purpose.md` を別途作成し，`AGENTS.md` から参照する．
+- この wiki の目的・追っている問い・スコープは，`purpose.md` に分離して管理する．`AGENTS.md` には全作業に共通する core schema を置く．
 
 ### Wiki Article Conventions
 
@@ -109,8 +109,12 @@ sources:
 
 ## Domains
 
-この wiki がカバーする主要ドメインをここに記載する．
+この wiki がカバーする主要ドメイン．詳細なスコープは [purpose.md](purpose.md) を参照する．
 
-- Domain 1
-- Domain 2
-- Domain 3
+- Hypernetwork
+- 画像 + テーブルデータのマルチモーダル学習
+- 条件付きモデル・modulation・adapter
+- 医療画像 Fairness
+- Fairness 評価指標・データセット
+- 条件付きモデルの解析
+- 研究方向・アイデア探索
