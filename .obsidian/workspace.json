@@ -238,6 +238,7 @@
   },
   "active": "903ab5eeae5bb698",
   "lastOpenFiles": [
+    "wiki/decisions/2026-07-06_initial_metadata_conditioned_model.md",
     "wiki/queries/2026-07-06_medical_imaging_intersectional_fairness_deep_research.md",
     "wiki/queries/2026-07-06_hypernetwork_image_tabular_medical_multimodal_deep_research.md",
     "wiki/queries/2026-07-06_medical_imaging_latent_subgroup_fairness_deep_research.md",
@@ -270,7 +271,6 @@
     "wiki/sources/AGENTS.md",
     "purpose.md.tmp.79595.03bc819719d0",
     "wiki/articles/Wiki_Query.md",
-    "wiki/articles/Wiki_Lint.md",
     "Clippings",
     "raw/misc",
     "my_space/templates",
