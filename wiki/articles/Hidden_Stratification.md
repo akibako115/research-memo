@@ -41,7 +41,7 @@ Hidden stratification は，次の条件で起こりやすい．
 | subtle discriminative features | 視覚的差異が小さく，モデルが学びにくい | subtle hip fracture |
 | spurious correlate | 疾患ではなく処置・撮像・施設などを手がかりにする | pneumothorax の chest drain |
 
-これらは [[Medical_Image_Fairness]] とも接続する．demographic subgroup だけでなく，疾患 phenotype，重症度，治療状態，撮像条件，施設，ラベル品質によっても subgroup reliability は変わる．
+これらは [[Medical_Image_Fairness_Audit_Loop]] とも接続する．demographic subgroup だけでなく，疾患 phenotype，重症度，治療状態，撮像条件，施設，ラベル品質によっても subgroup reliability は変わる．
 
 ## 測定方法
 
@@ -110,7 +110,7 @@ Masroor et al. の [[Hidden_Cohort_Fairness]] は，hidden stratification を検
 
 - [[Subgroup_Reliability]]
 - [[Subgroup_Performance_Monitoring]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]
 - [[Fairness_Evaluation]]
 - [[Spurious_Correlation]]
 - [[Worst_Group_Performance]]

@@ -1,3 +1,8 @@
+---
+created: 2026-07-06
+updated: 2026-07-06
+---
+
 # HyperAdapt を研究主軸ではなく比較対象として扱う
 
 ## Context

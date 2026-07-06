@@ -131,4 +131,4 @@ GEORGE は，subclass labels にアクセスせずに hidden stratification を�
 - [[Subgroup_Performance_Monitoring]]
 - [[Group_DRO]]
 - [[Algorithmic_Subgroup_Discovery]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]

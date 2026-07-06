@@ -110,5 +110,5 @@ hidden stratifications は synthetic / real-world data の両方で performance 
 - [[Hidden_Stratification]]
 - [[Algorithmic_Subgroup_Discovery]]
 - [[Worst_Group_Performance]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]
 - [[DOMINO]]

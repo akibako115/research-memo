@@ -146,7 +146,7 @@ MEDFAIR は，医療画像 fairness を systematic に benchmark する framewor
 ## 関連概念
 
 - [[Medical_Image_Fairness_Evaluation]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]
 - [[Worst_Group_Performance]]
 - [[Subgroup_Performance_Monitoring]]
 - [[Max_Min_Fairness]]

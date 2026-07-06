@@ -18,49 +18,51 @@ sources:
 
 # Medical Image Fairness Evaluation
 
-医療画像モデルの fairness を評価するとき，単に「subgroup 間の差が小さいか」だけを見ると，臨床的に重要な失敗を見落とすことがある．診断では，全 subgroup の性能を守ることが重要な場面が多く，差を小さくするために advantaged group の性能を下げるだけでは有害になりうる．Medical image fairness evaluation は，utility，group fairness，worst group performance，calibration，domain shift を同時に見る評価設計である．
+医療画像モデルの公平性を評価するとき，単に「患者群ごとの差が小さいか」だけを見ると，臨床的に重要な失敗を見落とすことがある．診断では，どの患者群でも一定以上の性能を守ることが重要な場面が多い．差を小さくするために，もともと性能が高かった群の性能を下げるだけでは，患者にとって有害になりうる．
 
-MEDFAIR の重要な示唆は，bias mitigation algorithm の比較以前に，**model selection criterion 自体が fairness outcome を大きく変える**という点である．医療画像 fairness では，algorithm，dataset，sensitive attribute，metric，model selection，OOD 評価を揃えて比較しないと，実用的な結論は出しにくい．
+医療画像の公平性評価は，平均的な診断性能，患者群ごとの性能差，最も弱い患者群の性能，確率の信頼性，施設や装置が変わったときの崩れ方を同時に見る評価設計である．ここでいう患者群は，性別，年齢，人種，保険種別，またはそれらの組み合わせで分けた集団を指す．
+
+MEDFAIR の重要な示唆は，公平化手法の比較以前に，**どの基準でモデルを採用するか自体が，公平性の結論を大きく変える**という点である．同じ学習手法でも，平均 AUC が最も高いモデルを選ぶのか，最も低性能な患者群を守るモデルを選ぶのかで，評価結果は変わる．医療画像の公平性では，学習手法，データセット，患者群の分け方，評価指標，モデル選択基準，外部データでの評価を揃えて比較しないと，実用的な結論は出しにくい．
 
 ## 評価の3軸
 
-MEDFAIR は，医療画像 fairness を次の3軸で評価する．
+MEDFAIR は，医療画像の公平性を次の3軸で評価する．
 
 | 軸 | 指標 | 何を見るか |
 | --- | --- | --- |
-| utility | overall AUC | 全体として診断性能が高いか |
-| group fairness | AUC gap | subgroup 間の性能差が小さいか |
-| Max-Min fairness | worst-case group AUC | 最も低性能な subgroup が守られているか |
+| 平均的な診断性能 | 全体 AUC | 患者全体で診断性能が高いか |
+| 患者群間の公平性 | AUC gap | 患者群の間で性能差が小さいか |
+| 最悪群の保護 | worst-case group AUC | 最も低性能な患者群が守られているか |
 
-この3軸は同じではない．AUC gap を小さくしても，両群の性能が下がれば臨床的には悪化する．逆に worst-case AUC を上げても，group gap が広がる場合がある．どちらを優先するかは，診断，triage，resource allocation などの臨床用途に依存する．
+この3軸は同じではない．患者群間の AUC 差を小さくしても，両群の性能が下がれば臨床的には悪化する．逆に最も弱い患者群の AUC を上げても，別の群との差が広がる場合がある．どちらを優先するかは，診断，トリアージ，限られた医療資源の配分などの用途に依存する．
 
-## Group fairness と Max-Min fairness
+## 患者群間の差を見るか，最悪群を守るか
 
-Group fairness は，protected subgroups 間の predictive performance parity を求める．限られた ICU beds の割当のような resource allocation では，subgroup 間の差を減らすことが重要になる．
+患者群間の公平性は，保護すべき患者群の間で「予測性能が同じくらいであること」を求める考え方である．たとえば ICU のベッド，専門医の診察枠，追加検査の優先順位のように，限られた医療資源を割り当てる場面では，ある患者群だけが一貫して不利にならないよう，患者群間の差を減らすことが重要になる．
 
-Max-Min fairness は，最悪 subgroup の utility を最大化する．医療画像診断では，全 subgroup の患者に害を与えないことが重要なので，worst-case group AUC は特に重要になる．
+一方，Max-Min fairness は，最も性能が低い患者群の診断性能をできるだけ高くする考え方である．医療画像診断では，全患者群に対して最低限の安全性を守る必要があるため，最悪群の AUC は特に重要になる．
 
 ```text
-Group fairness:
-  minimize performance gap between subgroups
+患者群間の公平性:
+  患者群どうしの性能差を小さくする
 
 Max-Min fairness:
-  maximize performance of the worst subgroup
+  最も性能が低い患者群の性能を高くする
 ```
 
-この違いを明示しないと，「公平性が改善した」という主張が，実際には advantaged group の性能低下による leveling down なのか，disadvantaged group の改善なのかが分からない．
+この違いを明示しないと，「公平性が改善した」という主張が，実際には高性能だった患者群を悪化させただけなのか，低性能だった患者群を改善したのかが分からない．前者は差を小さくしていても，臨床的には望ましくない．
 
-## Model selection を評価対象に含める
+## モデルの選び方も評価対象に含める
 
-fairness 評価では，training algorithm だけでなく，hyperparameter selection / early stopping の criterion も評価対象に含める必要がある．同じ ERM でも，overall AUC で選ぶか，worst-case AUC で選ぶか，Pareto front で選ぶかによって fairness outcome が変わる．
+公平性評価では，学習手法だけでなく，ハイパーパラメータや early stopping の基準も評価対象に含める必要がある．同じ通常学習（ERM）でも，全体 AUC で選ぶか，最悪群 AUC で選ぶか，平均性能と公平性の両方を見て選ぶかによって，公平性の結論が変わる．
 
-| Selection strategy | 選ぶもの | リスク |
+| モデル選択基準 | 選ぶもの | リスク |
 | --- | --- | --- |
-| overall performance-based | validation 全体で最も高性能な model | majority group に寄る |
-| minimax Pareto | Pareto front 上で worst-case AUC が最大の model | group metric の信頼性に依存 |
-| DTO-based | subgroup AUC の utopia point に近い model | utopia point 定義に依存 |
+| 全体性能で選ぶ | 検証データ全体で最も AUC が高いモデル | 多数派や簡単な患者群に寄る |
+| minimax Pareto | 平均性能と公平性の候補集合の中で，最悪群 AUC が最も高いモデル | 患者群ごとの指標が不安定だと選択も不安定になる |
+| DTO-based | 全患者群が理想的に高性能だった場合に最も近いモデル | 理想点の置き方に依存する |
 
-MEDFAIR では，ERM でも minimax Pareto selection を使うだけで worst-case AUC が改善し，overall AUC は有意に悪化しなかった．これは，fairness method を追加する前に，selection policy を固定・報告する必要があることを示す．
+ERM は empirical risk minimization の略で，訓練データ全体の平均誤差を小さくする通常の学習を指す．MEDFAIR では，この通常学習でも minimax Pareto selection を使うだけで最悪群 AUC が改善し，全体 AUC は有意に悪化しなかった．これは，公平化手法を追加する前に，モデル選択方針を固定・報告する必要があることを示す．
 
 ## In-distribution と OOD
 
@@ -171,16 +173,20 @@ MEDFAIR は bias source を label noise，class imbalance，data imbalance，spu
 
 | 用語 | 意味 |
 | --- | --- |
-| group fairness | subgroup 間の performance parity を求める fairness |
-| Max-Min fairness | worst-case subgroup の utility を最大化する fairness |
-| AUC gap | subgroup AUC の最大値と最小値の差 |
-| worst-case AUC | 最も低い subgroup AUC |
-| minimax Pareto selection | Pareto front 上で worst-case AUC が最大の model を選ぶ方法 |
-| DTO selection | subgroup performance の utopia point への距離で model を選ぶ方法 |
-| OOD fairness | domain shift 下で subgroup performance が保たれるかの評価 |
+| subgroup | 性別，年齢，人種などで分けた患者群 |
+| sensitive attribute | 公平性を監査するために使う患者属性．例: sex，age，race |
+| group fairness | 患者群間の性能差を小さくする公平性 |
+| Max-Min fairness | 最も性能が低い患者群の性能を最大化する公平性 |
+| utility | モデルの診断性能．この記事では主に AUC を指す |
+| ERM | 訓練データ全体の平均誤差を小さくする通常学習 |
+| AUC gap | 患者群ごとの AUC の最大値と最小値の差 |
+| worst-case AUC | 最も低い患者群 AUC |
+| leveling down | 高性能な群を悪化させて，見かけ上の差だけを小さくすること |
+| minimax Pareto selection | 平均性能と公平性の候補集合の中で，最悪群 AUC が最大のモデルを選ぶ方法 |
+| DTO selection | 患者群ごとの性能が理想点にどれだけ近いかでモデルを選ぶ方法 |
 | clinical fairness | 数理指標だけでなく，疾患 prevalence や臨床的因果関係を含めた公平性 |
 | PFD | Pairwise Fairness Difference，ranking fairness の subgroup 間差 |
-| OOD fairness | 外部 dataset / deployment setting で subgroup fairness が保たれるか |
+| OOD fairness | 施設，装置，患者集団が変わっても患者群ごとの公平性が保たれるかの評価 |
 
 ## 関連概念
 

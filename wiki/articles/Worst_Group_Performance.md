@@ -112,6 +112,6 @@ MEDFAIR は，医療画像 fairness の評価で worst-case group AUC を Max-Mi
 - [[Underdiagnosis_Bias]]
 - [[Equalized_Odds]]
 - [[Demographic_Imbalance]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]
 - [[Fairness_Evaluation]]
 - [[Image_Tabular_Fusion]]

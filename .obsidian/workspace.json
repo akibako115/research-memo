@@ -4,24 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "6157950e6d35bc2b",
+        "id": "b425d7a686936507",
         "type": "tabs",
         "children": [
           {
-            "id": "4b5451d70f7514e7",
+            "id": "2f3f925b92fee80b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/articles/FiLM.md",
+                "file": "wiki/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FiLM"
+              "title": "index"
+            }
+          },
+          {
+            "id": "14b7671384980b3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/articles/Medical_Image_Fairness_Evaluation.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Medical_Image_Fairness_Evaluation"
+            }
+          },
+          {
+            "id": "faf946ce09bcbdd0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新規タブ"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -207,12 +232,24 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "4b5451d70f7514e7",
+  "active": "14b7671384980b3c",
   "lastOpenFiles": [
-    "wiki/articles/DOMINO.md",
+    "wiki/articles/DAFT.md",
+    "wiki/synthesis/AGENTS.md",
+    "wiki/index.md",
+    "wiki/articles/Medical_Image_Fairness_Evaluation.md",
     "wiki/articles/Demographic_Imbalance.md",
+    "wiki/synthesis/Image_Tabular_Fusion.md",
+    "wiki/articles/Equalized_Odds.md",
+    "wiki/articles/FCRO.md",
+    "wiki/README.md",
+    "wiki/log.md",
+    "purpose.md",
     "wiki/articles/AGENTS.md",
     "wiki/synthesis/Medical_Image_Fairness_Audit_Loop.md",
+    "AGENTS.md",
+    "wiki/articles/FiLM.md",
+    "wiki/articles/DOMINO.md",
     "wiki/articles/Worst_Group_Performance.md",
     "wiki/articles/Fairness_Under_Distribution_Shift.md",
     "wiki/sources/2026-07-06_limits_fair_medical_imaging_ai_real_world_generalization.md",
@@ -223,18 +260,6 @@
     "wiki/articles/Fairness_Mitigation_In_Medical_Imaging.md",
     "wiki/sources/2026-07-06_addressing_fairness_issues_deep_learning_medical_image_analysis.md",
     "wiki/articles/Vision_Language_Model_Fairness.md",
-    "wiki/sources/2026-07-06_demographic_bias_vision_language_foundation_models_medical_imaging.md",
-    "wiki/articles/Foundation_Model_Fairness.md",
-    "wiki/sources/2026-07-06_how_fair_are_medical_imaging_foundation_models.md",
-    "wiki/articles/Metadata_Conditioning.md",
-    "wiki/sources/2026-07-06_linear_conditioning_metadata_image_segmentation.md",
-    "wiki/articles/FCRO.md",
-    "wiki/sources/2026-07-06_fcro_multiple_sensitive_attributes_medical_image_classification.md",
-    "wiki/articles/FairREAD.md",
-    "wiki/sources/2026-07-06_fairread_demographic_refusion_medical_image_classification.md",
-    "wiki/articles/Equalized_Odds.md",
-    "wiki/sources/2026-07-06_worst_group_equalized_odds_multi_attribute_medical_image_classification.md",
-    "wiki/articles/Race_Recognition_In_Medical_Images.md",
     "raw/papers/2026-07-06_dynamic_affine_feature_map_transform_3d_image_tabular.pdf",
     "raw/papers/2026-07-06_fairness_beyond_demographics_hidden_cohorts.pdf",
     "raw/papers/2026-07-06_fairread_demographic_refusion_medical_image_classification.pdf",

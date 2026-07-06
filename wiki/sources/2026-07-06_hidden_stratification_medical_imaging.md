@@ -117,9 +117,9 @@ hidden stratification は clinical imaging datasets における largely unrecog
 ## 関連概念
 
 - [[Hidden_Stratification]]
-- [[Subgroup_Performance]]
+- [[Subgroup_Performance_Monitoring]]
 - [[Spurious_Correlation]]
 - [[Error_Auditing]]
 - [[Schema_Completion]]
 - [[Algorithmic_Subgroup_Discovery]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]

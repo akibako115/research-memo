@@ -120,5 +120,5 @@ DOMINO は model debugging tool であり，捕捉できない failure mode は�
 - [[Hidden_Stratification]]
 - [[Subgroup_Performance_Monitoring]]
 - [[Worst_Group_Performance]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]
 - [[Spurious_Correlation]]

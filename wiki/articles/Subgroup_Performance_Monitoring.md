@@ -137,7 +137,7 @@ accuracy，AUROC，sensitivity，specificity，calibration，worst-group perform
 
 - [[Hidden_Stratification]]
 - [[DOMINO]]
-- [[Medical_Image_Fairness]]
+- [[Medical_Image_Fairness_Audit_Loop]]
 - [[Fairness_Evaluation]]
 - [[Worst_Group_Performance]]
 - [[Underdiagnosis_Bias]]

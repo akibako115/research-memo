@@ -1,11 +1,13 @@
 ---
 created: 2026-07-06
 updated: 2026-07-06
-sources:
-  - "[[sources/2026-07-06_daft_interweave_tabular_data_3d_images_cnns]]"
-  - "[[sources/2026-07-06_hyperfusion_hypernetwork_multimodal_tabular_medical_imaging]]"
-  - "[[sources/2026-07-06_fairread_demographic_refusion_medical_image_classification]]"
-  - "[[sources/2026-07-06_linear_conditioning_metadata_image_segmentation]]"
+articles:
+  - "[[FiLM]]"
+  - "[[DAFT]]"
+  - "[[Hypernetwork]]"
+  - "[[HyperFusion]]"
+  - "[[FairREAD]]"
+  - "[[Metadata_Conditioning]]"
 ---
 
 # Image Tabular Fusion
