@@ -1,0 +1,284 @@
+{
+  "main": {
+    "id": "e9ef3a26edfe0387",
+    "type": "split",
+    "children": [
+      {
+        "id": "6157950e6d35bc2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b5451d70f7514e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "my_space/internship-dotsline/sts-ingestion-構築タスク.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sts-ingestion-構築タスク"
+            }
+          },
+          {
+            "id": "21538d844bac996f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "my_space/internship-dotsline/assets/bootstrap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "bootstrap"
+            }
+          },
+          {
+            "id": "903ab5eeae5bb698",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新規タブ"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "57f66427c1084458",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d7277ce85af8f87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "44fa2c29c0ef5764",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "1848a83a4bd2dcec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "d340535dd753a85b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "6a908168615a9714",
+    "type": "split",
+    "children": [
+      {
+        "id": "559ce371a87de462",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8860c2872b34b830",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/synthesis/Phase_3_Detailed_Roadmap.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Phase_3_Detailed_Roadmapへのバックリンク"
+            }
+          },
+          {
+            "id": "e17af300679a3851",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/synthesis/Phase_3_Detailed_Roadmap.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Phase_3_Detailed_Roadmapからのアウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "c0a3511e7ea3245f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "6d77dba154993d8a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "すべてのプロパティ"
+            }
+          },
+          {
+            "id": "1429316ebc390a21",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/synthesis/Phase_3_Detailed_Roadmap.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Phase_3_Detailed_Roadmapのアウトライン"
+            }
+          },
+          {
+            "id": "77392cd706cbf61e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          },
+          {
+            "id": "e302285bf60eb4d6",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "claudian-view"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 530.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "bases:新規ベースを作成": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false,
+      "realclaudian:Open Claudian": false
+    }
+  },
+  "active": "903ab5eeae5bb698",
+  "lastOpenFiles": [
+    "my_space/internship-dotsline/assets/sts-ingestion-本番環境.md",
+    "my_space/internship-dotsline/assets/terraform-module-design-本番環境.md",
+    "my_space/internship-dotsline/terraform-module-test.md",
+    "my_space/internship-dotsline/sts-ingestion-構築タスク.md",
+    "my_space/internship-dotsline/assets/bootstrap.md",
+    "my_space/internship-dotsline/assets/sts-ingestion-正誤表.md",
+    "my_space/internship-dotsline/assets/test-strategy.md",
+    "assets/Pasted image 20260704194632.png",
+    "my_space/internship-dotsline/無題のファイル.md",
+    "xxx.md",
+    "2026-07-04.md",
+    "my_space/internship-dotsline/assets/sts-ingestion-プロトタイプ.md",
+    "my_space/internship-dotsline/assets/sts-ingestion",
+    "my_space/internship-dotsline",
+    "my_space/internship-dotsline/assets",
+    "raw/notes/sts-ingestion.md",
+    "assets",
+    "llm-wiki-de",
+    "wiki/articles/AGENTS.md",
+    "wiki/sources/AGENTS.md",
+    "purpose.md",
+    "purpose.md.tmp.79595.03bc819719d0",
+    "wiki/articles/Wiki_Query.md",
+    "wiki/articles/Wiki_Lint.md",
+    "wiki/articles/Wiki_Ingest.md",
+    "wiki/log.md",
+    "wiki/articles/Terraform_Module_Design.md",
+    "wiki/articles/LLM_Wiki_Pattern.md",
+    "wiki/articles/Dataform_Repository.md",
+    "wiki/articles/Dataform.md",
+    "wiki/articles/Least_Privilege.md",
+    "wiki/articles/Secret_Manager.md",
+    "Clippings",
+    "raw/misc",
+    "my_space/templates",
+    "wiki/my_space",
+    "_staging/google_cloud/メタデータ管理/assets/bf600c370a24-20221209.webp",
+    "_staging/Pasted image 20260529105944.png",
+    "_staging/Pasted image 20260529104520.png",
+    "_staging/snowflake/所属不明_調査/assets/image.png",
+    "Pasted image 20260529104520.png",
+    "Pasted image 20260529105944.png",
+    "Pasted image 20260529104334.png",
+    "snowflake/所属不明_調査/assets/image.png",
+    "google_cloud/メタデータ管理/assets/bf600c370a24-20221209.webp",
+    "無題のファイル.canvas"
+  ]
+}

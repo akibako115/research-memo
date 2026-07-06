@@ -1,0 +1,43 @@
+{
+  "tag-colors": [
+    {
+      "tagKey": "#",
+      "color": "",
+      "backgroundColor": ""
+    }
+  ],
+  "date-colors": [
+    {
+      "distance": 1,
+      "unit": "days",
+      "direction": "after",
+      "backgroundColor": "rgba(255, 0, 55, 0.42)",
+      "isBefore": true,
+      "color": "rgba(204, 204, 204, 1)"
+    },
+    {
+      "isToday": false,
+      "distance": 7,
+      "unit": "days",
+      "direction": "after",
+      "backgroundColor": "rgba(9, 232, 9, 0.23)",
+      "color": "rgba(204, 204, 204, 1)"
+    },
+    {
+      "isToday": false,
+      "distance": 128,
+      "unit": "months",
+      "direction": "after",
+      "backgroundColor": "rgba(31, 31, 31, 0.19)",
+      "color": "rgba(139, 148, 158, 1)"
+    },
+    {
+      "distance": 1,
+      "unit": "days",
+      "direction": "after",
+      "isToday": true,
+      "backgroundColor": "rgba(231, 228, 69, 0.83)",
+      "color": "rgba(51, 51, 51, 1)"
+    }
+  ]
+}

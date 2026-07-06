@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv *)",
+      "Bash(git rm *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git blame *)",
+      "Bash(mkdir *)",
+      "Bash(touch *)",
+      "Bash(find *)",
+      "Bash(ls *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(rm wiki/*)",
+      "WebSearch(*)",
+      "WebFetch(*)",
+      "Read(*)",
+      "Edit(wiki/*)",
+      "Edit(raw/*)",
+      "Edit(CLAUDE.md)",
+      "Edit(AGENTS.md)",
+      "Edit(README.md)",
+      "Edit(.gitignore)",
+      "Edit(.claude/*)",
+      "Write(wiki/*)",
+      "Write(raw/*)",
+      "Write(CLAUDE.md)",
+      "Write(AGENTS.md)",
+      "Write(README.md)",
+      "Write(.gitignore)",
+      "Write(.claude/*)"
+    ],
+    "deny": [
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(git push *)",
+      "Bash(gh *)",
+      "mcp__claude_ai_Gmail__*",
+      "mcp__claude_ai_Slack__*",
+      "mcp__claude_ai_Google_Drive__*"
+    ]
+  }
+}
