@@ -96,15 +96,15 @@ Masroor et al. の [[Hidden_Cohort_Fairness]] は，hidden stratification を検
 
 ## リファレンス
 
-| 用語 | 意味 |
-| --- | --- |
-| superclass | 機械学習で直接予測する粗い class label |
-| subclass | superclass 内の臨床的・視覚的に異なる subset |
-| hidden stratification | subclass がラベルや評価で明示されず，aggregate metric が subclass failure を隠す現象 |
-| schema completion | subclass schema を追加して test data を明示的に再ラベルする評価 |
-| error auditing | model errors を人間が調べ，規則的な失敗 subgroup を探す評価 |
-| algorithmic measurement | clustering などで underperforming subgroup を探索する評価 |
-| spurious correlate | causal ではないが label と共起し，モデルが手がかりにする特徴 |
+| 用語                      | 意味                                                               |
+| ----------------------- | ---------------------------------------------------------------- |
+| superclass              | 機械学習で直接予測する粗い class label                                        |
+| subclass                | superclass 内の臨床的・視覚的に異なる subset                                  |
+| hidden stratification   | subclass がラベルや評価で明示されず，aggregate metric が subclass failure を隠す現象 |
+| schema completion       | subclass schema を追加して test data を明示的に再ラベルする評価                    |
+| error auditing          | model errors を人間が調べ，規則的な失敗 subgroup を探す評価                        |
+| algorithmic measurement | clustering などで underperforming subgroup を探索する評価                  |
+| spurious correlate      | causal ではないが label と共起し，モデルが手がかりにする特徴                            |
 
 ## 関連概念
 
