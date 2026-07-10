@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "my_space/実験管理メモ.md",
+                "file": "wiki/articles/DOMINO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "実験管理メモ"
+              "title": "DOMINO"
             }
           },
           {
@@ -223,8 +223,8 @@
   },
   "active": "faf946ce09bcbdd0",
   "lastOpenFiles": [
-    "wiki/articles/Hidden_Stratification.md",
     "my_space/実験管理メモ.md",
+    "wiki/articles/Hidden_Stratification.md",
     "wiki/index.md",
     "wiki/articles/Underdiagnosis_Bias.md",
     "wiki/decisions/2026-07-06_initial_metadata_conditioned_model.md",
