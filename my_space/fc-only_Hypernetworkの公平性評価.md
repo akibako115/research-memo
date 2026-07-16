@@ -8,8 +8,9 @@
   __仮説__:
   H1: FiLM は全体性能だけでなく、特定属性の recall gap を改善する
   - 否定．むしろ患者属性 (age, bmi, race)を中心に悪化する．
+  - ただし，recall gapは悪化しているが auroc gapは改善している属性もある (age, bmi) 
   H2: 改善/悪化は AUROC より recall_pos/recall_neg に出やすい
-  - 
+  - 肯定．recall gapよりもAUROCの方が値のレンジが小さい
 
   
 ## 2. 複数属性での公平性
