@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "my_space/fc-only_Hypernetworkの公平性評価.md",
+                "file": "my_space/研究計画.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fc-only_Hypernetworkの公平性評価"
+              "title": "研究計画"
             }
           },
           {
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 494.5
+    "width": 494.5,
+    "collapsed": true
   },
   "right": {
     "id": "6a908168615a9714",
@@ -221,9 +222,10 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "44fa2c29c0ef5764",
+  "active": "faf946ce09bcbdd0",
   "lastOpenFiles": [
     "my_space/実験管理メモ.md",
+    "my_space/研究計画.md",
     "my_space/fc-only_Hypernetworkの公平性評価.md",
     "my_space/w.md",
     "wiki/articles/DOMINO.md",
@@ -251,7 +253,6 @@
     "wiki/README.md",
     "purpose.md",
     "wiki/articles/AGENTS.md",
-    "wiki/synthesis/Medical_Image_Fairness_Audit_Loop.md",
     "raw/papers/2026-07-06_dynamic_affine_feature_map_transform_3d_image_tabular.pdf",
     "raw/papers/2026-07-06_fairness_beyond_demographics_hidden_cohorts.pdf",
     "raw/papers/2026-07-06_fairread_demographic_refusion_medical_image_classification.pdf",
