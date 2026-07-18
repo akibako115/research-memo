@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "my_space/Fable 研究相談.md",
+                "file": "my_space/Hypernetwork局所効果異質性_研究方針.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fable 研究相談"
+              "title": "Hypernetwork局所効果異質性_研究方針"
             }
           },
           {
@@ -223,9 +223,9 @@
   },
   "active": "faf946ce09bcbdd0",
   "lastOpenFiles": [
+    "my_space/Fable 研究相談.md",
     "my_space/Hypernetwork局所効果異質性_研究方針.md",
     "wiki/articles/Subgroup_Performance_Monitoring.md",
-    "my_space/Fable 研究相談.md",
     "my_space/実験管理メモ.md",
     "my_space/研究計画.md",
     "my_space/fc-only_Hypernetworkの公平性評価.md",
