@@ -3,6 +3,7 @@ created: 2026-07-06
 updated: 2026-07-21
 sources:
   - "[[sources/2026-07-21_subgroup_separability_group_fair_medical_image_classification]]"
+  - "[[sources/2026-07-21_demographically_invariant_models_representations_medical_imaging_fair]]"
   - "[[sources/2026-07-06_medfair_benchmarking_fairness_medical_imaging]]"
   - "[[sources/2026-07-06_underdiagnosis_bias_chest_radiographs]]"
   - "[[sources/2026-07-06_gender_imbalance_medical_imaging_biased_classifiers]]"
@@ -160,6 +161,8 @@ MEDFAIR は bias source を label noise，class imbalance，data imbalance，spu
 
 [[Subgroup_Separability]] は，group fairness metric そのものの限界を指摘する．Jones et al. は，モデルが画像から subgroup member を識別できる度合いが低いとき，training data に underdiagnosis bias があっても性能劣化が全 group に一様に生じ，group fairness metric（AUC gap など）では検出できないことを理論的・実証的に示した．したがって，fairness 評価では group 間の差だけでなく，clean baseline や過去の運用実績と比較した絶対的な性能低下も監視する必要がある．
 
+[[Demographic_Representation_Invariance]] は，「モデルが demographic group membership を符号化しないこと」を fairness の目標にすべきかを問い直す．marginal representation invariance は statistical parity を，class-conditional / counterfactual representation invariance は separation を含意し，いずれも予測精度の犠牲や group 間の within-class variation の均一化という代償を伴う．この整理は，fairness 評価の重心を「representation が group membership を符号化しているか」ではなく，「subgroup ごとの実際の予測 outcome（error rate，calibration，worst-case performance）」に置くべきだという，本記事全体の立場を裏付ける．
+
 ## 条件付きモデルの評価に使う
 
 患者属性や EHR を使う [[Image_Tabular_Fusion]] / [[HyperFusion]] モデルは，subgroup reliability を改善する可能性がある一方，protected attribute 依存を強める可能性もある．評価では次を最低限見る．
@@ -210,3 +213,4 @@ MEDFAIR は bias source を label noise，class imbalance，data imbalance，spu
 - [[Image_Tabular_Fusion]]
 - [[HyperFusion]]
 - [[Subgroup_Separability]]
+- [[Demographic_Representation_Invariance]]

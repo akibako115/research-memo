@@ -1,10 +1,11 @@
 ---
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-21
 sources:
   - "[[sources/2026-07-06_hidden_stratification_medical_imaging]]"
   - "[[sources/2026-07-06_subgroup_performance_analysis_hidden_stratifications]]"
   - "[[sources/2026-07-06_fairness_beyond_demographics_hidden_cohorts]]"
+  - "[[sources/2026-07-21_demographically_invariant_models_representations_medical_imaging_fair]]"
 ---
 
 # Hidden Stratification
@@ -94,6 +95,8 @@ Bissoto et al. の結果は，sex，age，ethnicity などの metadata subgroup 
 
 Masroor et al. の [[Hidden_Cohort_Fairness]] は，hidden stratification を検出だけで終わらせず，appearance-based hidden cohorts を fairness optimization の group として使う．LHCF では image embeddings を GMM で cluster 化し，その cohort label に対して worst loss や loss gap を下げる．これにより，demographic labels を training に使わなくても，visible demographic groups や intersectional groups の fairness が改善しうる．
 
+[[Demographic_Representation_Invariance]] は，hidden stratification が示す within-class variation（同じ superclass label 内の subclass の違い）が，representation invariance を要求することの一般的な欠点でもあることを指摘する．marginal / class-conditional / counterfactual のいずれの representation invariance も，group 間で異なる疾患 subtype や重症度の分布を latent representation 上で均一化することを要求してしまい，これは demographic group を横断した hidden stratification と本質的に同じ問題（本質的に異なる患者を同一表現に押し込める）を引き起こす．
+
 ## リファレンス
 
 | 用語                      | 意味                                                               |
@@ -115,3 +118,4 @@ Masroor et al. の [[Hidden_Cohort_Fairness]] は，hidden stratification を検
 - [[Spurious_Correlation]]
 - [[Worst_Group_Performance]]
 - [[Hidden_Cohort_Fairness]]
+- [[Demographic_Representation_Invariance]]

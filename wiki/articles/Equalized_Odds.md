@@ -1,12 +1,13 @@
 ---
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-21
 sources:
   - "[[sources/2026-07-06_worst_group_equalized_odds_multi_attribute_medical_image_classification]]"
   - "[[sources/2026-07-06_fairread_demographic_refusion_medical_image_classification]]"
   - "[[sources/2026-07-06_fcro_multiple_sensitive_attributes_medical_image_classification]]"
   - "[[sources/2026-07-06_addressing_fairness_issues_deep_learning_medical_image_analysis]]"
   - "[[sources/2026-07-06_improving_model_fairness_image_based_cad]]"
+  - "[[sources/2026-07-21_demographically_invariant_models_representations_medical_imaging_fair]]"
 ---
 
 # Equalized Odds
@@ -88,6 +89,8 @@ EO を改善する方法は fairness-accuracy trade-off を持つ．そのため
 
 [[FCRO]] は，representation learning 側から Equalized Odds disparity を下げる例である．Race，Sex，Age の conjunction subgroup に対して Joint Delta ED を計算し，target representation と sensitive representation の orthogonality によって disparity を抑える．
 
+[[Demographic_Representation_Invariance]] は，Equalized Odds（特に classification level の `Ŷ ⊥ A | Y`）が，class-conditional representation invariance（`Z ⊥ A | Y`，risk score レベルの separation）から**含意される**が，その逆は要求されないことを示す．つまり，risk score レベルで representation を group 間で一致させなくても，error rate だけを直接揃えることは可能であり，representation-level の invariance を課すことは group-wise calibration との非両立という追加コストを伴う過度に制約的な要求になりうる．
+
 ## リファレンス
 
 | 用語 | 意味 |
@@ -111,3 +114,4 @@ EO を改善する方法は fairness-accuracy trade-off を持つ．そのため
 - [[Fairness_Mitigation_In_Medical_Imaging]]
 - [[Pairwise_Fairness]]
 - [[Subgroup_Separability]]
+- [[Demographic_Representation_Invariance]]
