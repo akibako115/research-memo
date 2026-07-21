@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/articles/Subgroup_Performance_Monitoring.md",
+                "file": "my_space/Hypernetwork局所効果異質性_研究方針.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Subgroup_Performance_Monitoring"
+              "title": "Hypernetwork局所効果異質性_研究方針"
             }
           },
           {
@@ -221,8 +221,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "44fa2c29c0ef5764",
+  "active": "faf946ce09bcbdd0",
   "lastOpenFiles": [
+    "wiki/articles/Subgroup_Performance_Monitoring.md",
     "wiki/articles/Subgroup_Separability.md.tmp.32800.fa74ab73cf15",
     "wiki/articles/Demographic_Representation_Invariance.md",
     "wiki/sources/2026-07-21_demographically_invariant_models_representations_medical_imaging_fair.md",
@@ -240,7 +241,6 @@
     "my_space/研究計画.md",
     "my_space/実験管理メモ.md",
     "my_space/fc-only_Hypernetworkの公平性評価.md",
-    "wiki/articles/Subgroup_Performance_Monitoring.md",
     "my_space/w.md",
     "wiki/articles/DOMINO.md",
     "wiki/articles/Hidden_Stratification.md",
@@ -258,7 +258,6 @@
     "my_space",
     "wiki/articles/DAFT.md",
     "raw/papers/2026-07-06_dynamic_affine_feature_map_transform_3d_image_tabular.pdf",
-    "raw/papers/2026-07-06_fairness_beyond_demographics_hidden_cohorts.pdf",
     "assets/Pasted image 20260704194632.png",
     "_staging/google_cloud/メタデータ管理/assets/bf600c370a24-20221209.webp",
     "_staging/Pasted image 20260529105944.png",
