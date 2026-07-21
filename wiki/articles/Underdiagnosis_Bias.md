@@ -1,9 +1,10 @@
 ---
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-21
 sources:
   - "[[sources/2026-07-06_underdiagnosis_bias_chest_radiographs]]"
   - "[[sources/2026-07-06_demographic_bias_vision_language_foundation_models_medical_imaging]]"
+  - "[[sources/2026-07-21_subgroup_separability_group_fair_medical_image_classification]]"
 ---
 
 # Underdiagnosis Bias
@@ -85,6 +86,10 @@ clinical underdiagnosis
 
 この見方は [[Hidden_Stratification]] ともつながる．metadata 上の protected subgroup だけでなく，疾患 subtype，label quality，treatment status，image artifact などの hidden subgroup で underdiagnosis が起こる可能性がある．
 
+## Subgroup separability による現れ方の違い
+
+underdiagnosis bias が学習データに存在しても，それが群間の性能差として観測されるとは限らない．Jones et al. は，モデルが画像から subgroup member を識別できる度合い（[[Subgroup_Separability]]）が高いときにのみ，underdiagnosed group の性能が選択的に劣化し，group fairness metric がそれを検出できることを理論的・実証的に示した．separability が低い場合，bias は全 group に一様に波及し，group 間の差としては現れない．したがって，「group fairness metric に差が出ない」ことは「bias がない」ことを意味せず，subgroup separability が低いために検出できていないだけの可能性がある．
+
 ## 運用での使い方
 
 Underdiagnosis bias は，モデル開発時の validation だけでなく，deployment 後の monitoring で継続的に見るべき指標である．特に triage，screening，worklist prioritization のように，negative prediction が受診機会や読影順序を下げる用途では優先度が高い．
@@ -120,3 +125,4 @@ Underdiagnosis bias は，モデル開発時の validation だけでなく，dep
 - [[Intersectional_Fairness]]
 - [[Bias_Amplification]]
 - [[Vision_Language_Model_Fairness]]
+- [[Subgroup_Separability]]

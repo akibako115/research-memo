@@ -123,3 +123,4 @@ mitigation は，発見された bias source に対応して選ぶ．
 - [[Hidden_Cohort_Fairness]]
 - [[Pairwise_Fairness]]
 - [[Fairness_Under_Distribution_Shift]]
+- [[Subgroup_Separability]]

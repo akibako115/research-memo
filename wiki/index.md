@@ -13,8 +13,9 @@
 5. [[Demographic_Imbalance]] — bias source としてのデータ不均衡
 6. [[Race_Recognition_In_Medical_Images]] — 画像から属性が漏れる問題
 7. [[Worst_Group_Performance]] — 最悪群性能の最適化
-8. [[Fairness_Mitigation_In_Medical_Imaging]] — 介入手法の整理
-9. [[Fairness_Under_Distribution_Shift]] — ID fairness の限界
+8. [[Subgroup_Separability]] — bias が group fairness metric に現れる／現れない条件
+9. [[Fairness_Mitigation_In_Medical_Imaging]] — 介入手法の整理
+10. [[Fairness_Under_Distribution_Shift]] — ID fairness の限界
 
 ### Path 2: Hidden subgroup と監視
 
@@ -53,6 +54,7 @@ known subgroup を超えた failure mode の発見と監視．
 - [[Worst_Group_Performance]]
 - [[Underdiagnosis_Bias]]
 - [[Demographic_Imbalance]]
+- [[Subgroup_Separability]]
 
 ### 医療画像 Fairness: 介入・緩和
 

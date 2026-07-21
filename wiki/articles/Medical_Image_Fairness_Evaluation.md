@@ -1,7 +1,8 @@
 ---
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-21
 sources:
+  - "[[sources/2026-07-21_subgroup_separability_group_fair_medical_image_classification]]"
   - "[[sources/2026-07-06_medfair_benchmarking_fairness_medical_imaging]]"
   - "[[sources/2026-07-06_underdiagnosis_bias_chest_radiographs]]"
   - "[[sources/2026-07-06_gender_imbalance_medical_imaging_biased_classifiers]]"
@@ -157,6 +158,8 @@ MEDFAIR は bias source を label noise，class imbalance，data imbalance，spu
 
 [[Fairness_Under_Distribution_Shift]] では，demographic encoding と fairness gap の関係も評価対象になる．ID data だけで OOD deployment 用の model を選ぶ場合，minimum ID fairness gap よりも，representation から sensitive attributes が予測しにくい model を選ぶ方が OOD fairness に有利な場合がある．
 
+[[Subgroup_Separability]] は，group fairness metric そのものの限界を指摘する．Jones et al. は，モデルが画像から subgroup member を識別できる度合いが低いとき，training data に underdiagnosis bias があっても性能劣化が全 group に一様に生じ，group fairness metric（AUC gap など）では検出できないことを理論的・実証的に示した．したがって，fairness 評価では group 間の差だけでなく，clean baseline や過去の運用実績と比較した絶対的な性能低下も監視する必要がある．
+
 ## 条件付きモデルの評価に使う
 
 患者属性や EHR を使う [[Image_Tabular_Fusion]] / [[HyperFusion]] モデルは，subgroup reliability を改善する可能性がある一方，protected attribute 依存を強める可能性もある．評価では次を最低限見る．
@@ -206,3 +209,4 @@ MEDFAIR は bias source を label noise，class imbalance，data imbalance，spu
 - [[Fairness_Under_Distribution_Shift]]
 - [[Image_Tabular_Fusion]]
 - [[HyperFusion]]
+- [[Subgroup_Separability]]

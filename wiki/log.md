@@ -1,5 +1,13 @@
 # Wiki Log
 
+## 2026-07-21
+
+- raw 1件投入: `raw/papers/2307.02791v1.pdf`（Jones, Roschewitz, Glocker, "The Role of Subgroup Separability in Group-Fair Medical Image Classification," arXiv:2307.02791）．ファイル名が命名規則（`YYYY-MM-DD_{title}`）に従っていないため，source 側で今日の日付をプレフィックスに使用．
+- source 1件作成: `2026-07-21_subgroup_separability_group_fair_medical_image_classification`
+- article 1件新規作成: [[Subgroup_Separability]] — subgroup separability（画像から subgroup member を識別できる度合い）が underdiagnosis bias の group fairness metric への現れ方を左右するという新概念
+- 既存 article 更新（wikilink・関連セクション追加）: [[Underdiagnosis_Bias]]，[[Medical_Image_Fairness_Evaluation]]，[[Race_Recognition_In_Medical_Images]]，[[Worst_Group_Performance]]，[[Equalized_Odds]]，[[Fairness_Mitigation_In_Medical_Imaging]]
+- index.md 更新: Reading Path 1 に [[Subgroup_Separability]] 追加，Articles の「医療画像 Fairness: 評価」セクションに追加
+
 ## 2026-07-06
 
 - wiki 初期構築: raw 22件（論文 PDF）を投入，source 22件・article 22件を一括作成

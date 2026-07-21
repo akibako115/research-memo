@@ -1,10 +1,11 @@
 ---
 created: 2026-07-06
-updated: 2026-07-06
+updated: 2026-07-21
 sources:
   - "[[sources/2026-07-06_ai_recognition_patient_race_medical_imaging]]"
   - "[[sources/2026-07-06_demographic_bias_vision_language_foundation_models_medical_imaging]]"
   - "[[sources/2026-07-06_limits_fair_medical_imaging_ai_real_world_generalization]]"
+  - "[[sources/2026-07-21_subgroup_separability_group_fair_medical_image_classification]]"
 ---
 
 # Race Recognition In Medical Images
@@ -89,6 +90,8 @@ Yang et al. は，この問題が medical [[Vision_Language_Model_Fairness|visio
 
 別の Yang et al. は，demographic encoding が fairness gap と相関し，さらに [[Fairness_Under_Distribution_Shift]] にも影響することを示した．ID data で representation から age，race，sex が予測しやすい model は FPR/FNR gap が大きくなりやすく，OOD deployment では ID fairness gap 最小の model より demographic encoding が少ない model selection の方が fair になりやすかった．
 
+[[Subgroup_Separability]] は，この race predictability が modality と attribute によってどれだけ変動するかを定量化する枠組みを与える．Jones et al. は，chest X-ray からの race 予測が AUC 0.936-0.951 に達する一方，fundus image からの sex 予測は AUC 0.642 にとどまるなど，separability が dataset-attribute の組み合わせで大きく異なることを示した．separability が高い modality ほど，biased data で学習したモデルが sensitive information を representation に強く符号化しやすい．
+
 ## リファレンス
 
 | 用語 | 意味 |
@@ -109,3 +112,4 @@ Yang et al. は，この問題が medical [[Vision_Language_Model_Fairness|visio
 - [[Bias_Amplification]]
 - [[Vision_Language_Model_Fairness]]
 - [[Fairness_Under_Distribution_Shift]]
+- [[Subgroup_Separability]]

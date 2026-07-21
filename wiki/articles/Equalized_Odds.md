@@ -110,3 +110,4 @@ EO を改善する方法は fairness-accuracy trade-off を持つ．そのため
 - [[FCRO]]
 - [[Fairness_Mitigation_In_Medical_Imaging]]
 - [[Pairwise_Fairness]]
+- [[Subgroup_Separability]]
