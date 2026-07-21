@@ -30,14 +30,7 @@
       "Edit(AGENTS.md)",
       "Edit(README.md)",
       "Edit(.gitignore)",
-      "Edit(.claude/*)",
-      "Write(wiki/*)",
-      "Write(raw/*)",
-      "Write(CLAUDE.md)",
-      "Write(AGENTS.md)",
-      "Write(README.md)",
-      "Write(.gitignore)",
-      "Write(.claude/*)"
+      "Edit(.claude/*)"
     ],
     "deny": [
       "Bash(curl *)",
